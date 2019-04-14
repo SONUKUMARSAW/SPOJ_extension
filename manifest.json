@@ -6,7 +6,10 @@
     "content_scripts":[
         {
             "matches":["https://www.spoj.com/*", "http://www.spoj.com/*"],
-            "js":["hello.js"]
+            "js":["script.js"]
         }
-		      ]
+              ],
+
+    "icons":{"128":"SPOJ128.png","48":"SPOJ48.png","16":"SPOJ16.png"}
+              
   }
