@@ -15,7 +15,7 @@ function secondsToHms(d) {
     var hDisplay = h >= 0 ? h + (h ==0 ? "0 : " : " : ") : "";
     var mDisplay = m >= 0 ? m + (m == 0 ? "0 : " : " : ") : "";
     var sDisplay = s >= 0 ? s + (s == 0 ? "0" : " ") : "";
-    return hDisplay.fontsize(5.8).fontcolor("#cc0000").bold() + mDisplay.fontsize(5).fontcolor("#cc0000").bold() + sDisplay.fontsize(5).fontcolor("#cc0000").bold(); 
+    return hDisplay.fontsize(5.8).fontcolor("#cc0105").bold() + mDisplay.fontsize(5).fontcolor("#cc0105").bold() + sDisplay.fontsize(5).fontcolor("#cc0000").bold(); 
 }
 var downloadTimer = setInterval(function(){
   
@@ -24,7 +24,7 @@ var downloadTimer = setInterval(function(){
   }
   timeleft -= 1;
   if(timeleft==0){
-    document.getElementById("problem-tags").innerHTML="Click Me! for help".fontsize(4);
+    document.getElementById("problem-tags").innerHTML="Click Me! for the help required".fontsize(4);
   }
   if(timeleft <= 0){
     clearInterval(downloadTimer);
